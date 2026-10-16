@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bootstrap</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container site-nav" aria-label="Main navigation">
+      <a class="site-brand" href="index.html">Forms</a>
+      <div class="nav-links">
+        <a class="nav-item" href="index.html">Task 0</a>
+        <a class="nav-item" href="task1.html">Task 1</a>
+        <a class="nav-item active" href="task2.html" aria-current="page">Task 2</a>
+        <a class="nav-item" href="task3.html">Task 3</a>
+        <a class="nav-item" href="task4.html">Task 4</a>
+      </div>
+    </nav>
+  </header>
+  <main class="container page">
+    <h1>Bootstrap Contact Form</h1>
+    <section class="form-panel">
+      <form id="form2">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label" for="name2">Name</label>
+            <input class="form-control" id="name2" name="name" type="text" required placeholder="Your name">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="email2">Email</label>
+            <input class="form-control" id="email2" name="email" type="email" required placeholder="name@example.com" aria-describedby="emailHelp2">
+          </div>
+          <div class="col-12">
+            <label class="form-label" for="message2">Message</label>
+            <textarea class="form-control" id="message2" name="message" rows="5" required placeholder="Write your message"></textarea>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+        </div>
+        <div class="form-status mt-3" role="status" aria-live="polite" hidden></div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,87 @@
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f6f8;
+    color:#263238
+}
+.site-header{
+    background:#263647
+}
+.site-nav{
+    min-height:68px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    flex-wrap:wrap;
+    padding-top:12px
+    ;padding-bottom:12px
+}
+.site-brand
+{font-size:18px;
+    font-weight:700;
+    color:#fff;
+    text-decoration:none
+}
+.site-brand:hover
+{color:#fff}
+.nav-links{display:flex;
+    flex-wrap:wrap;
+    gap:7px}
+.nav-item{
+    color:#e2e8f0;
+    text-decoration:none;
+    padding:7px 10px;
+    border-radius:4px;
+    font-size:14px
+}
+.nav-item:hover,.nav-item.active{
+    color:#fff;background:#3e5267
+}
+.page{
+    max-width:790px;
+    padding-top:36px;
+    padding-bottom:20px
+}
+h1{
+    font-size:27px;
+    font-weight:700;
+    margin-bottom:10px
+}
+.form-panel{
+    padding:25px; background:#fff;border:1px solid #dce2e8; border-radius:6px}
+.basic-field{
+    margin-bottom:16px}
+.basic-field label{
+    display:block;
+    font-weight:600;
+    margin-bottom:7px}
+.basic-field input,
+.basic-field textarea{
+    display:block;
+    width:100%;
+    padding:10px;
+    border:1px solid #b8c2cc;
+    border-radius:4px;
+    background:#fff;
+    font:inherit}
+.basic-field input:focus,.basic-field textarea:focus{
+    outline:2px solid #9bbbf7;outline-offset:1px}
+.basic-button{
+    border:0;
+    border-radius:4px;
+    background:#0d4eb0;
+    color:#fff;padding:10px 20px;
+    cursor:pointer}
+.basic-button:hover{
+    background:#07306d}
+.group-title{
+    font-size:16px;font-weight:500}
+.group-error{
+    font-size:14px;
+    color:#dc3545;
+    margin-top:4px}
+.group-success{
+    font-size:14px;
+    color:#198754;
+    margin-top:4px}
+[hidden]{display:none!important}

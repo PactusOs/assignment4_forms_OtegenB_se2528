@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bootstrap Validation</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container site-nav" aria-label="Main navigation">
+      <a class="site-brand" href="index.html">Forms Assignment</a>
+      <div class="nav-links">
+        <a class="nav-item" href="index.html">Task 0</a>
+        <a class="nav-item" href="task1.html">Task 1</a>
+        <a class="nav-item" href="task2.html">Task 2</a>
+        <a class="nav-item active" href="task3.html" aria-current="page">Task 3</a>
+        <a class="nav-item" href="task4.html">Task 4</a>
+      </div>
+    </nav>
+  </header>
+  <main class="container page">
+    <h1>Bootstrap Validation</h1>
+    <section class="form-panel">
+      <form id="form3" novalidate>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label" for="name3">Name</label>
+            <input class="form-control" id="name3" name="name" type="text" required minlength="2" maxlength="40" placeholder="Your name" data-empty="Name is required.">
+            <div class="valid-feedback">nice</div>
+            <div class="invalid-feedback">Name is required.</div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="email3">Email</label>
+            <input class="form-control" id="email3" name="email" type="email" required placeholder="name@example.com" data-empty="Email is required.">
+            <div class="valid-feedback">omagad</div>
+            <div class="invalid-feedback">Email is required.</div>
+          </div>
+          <div class="col-12">
+            <label class="form-label" for="message3">Message</label>
+            <textarea class="form-control" id="message3" name="message" rows="5" required minlength="10" maxlength="500" placeholder="At least 10 characters" data-empty="Message is required."></textarea>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Message is required.</div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+        </div>
+        <div class="form-status mt-3" role="status" aria-live="polite" hidden></div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

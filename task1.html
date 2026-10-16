@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Validation</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container site-nav" aria-label="Main navigation">
+      <a class="site-brand" href="index.html">Forms</a>
+      <div class="nav-links">
+        <a class="nav-item" href="index.html">Task 0</a>
+        <a class="nav-item active" href="task1.html" aria-current="page">Task 1</a>
+        <a class="nav-item" href="task2.html">Task 2</a>
+        <a class="nav-item" href="task3.html">Task 3</a>
+        <a class="nav-item" href="task4.html">Task 4</a>
+      </div>
+    </nav>
+  </header>
+  <main class="container page">
+    <h1>Validation</h1>
+    <section class="form-panel">
+      <form id="form1">
+        <div class="basic-field">
+          <label for="name1">Name</label>
+          <input id="name1" name="name" type="text" required minlength="2" maxlength="40" placeholder="At least 2 characters">
+        </div>
+        <div class="basic-field">
+          <label for="email1">Email</label>
+          <input id="email1" name="email" type="email" required maxlength="100" placeholder="name@example.com">
+        </div>
+        <div class="basic-field">
+          <label for="message1">Message</label>
+          <textarea id="message1" name="message" rows="5" required minlength="10" maxlength="500" placeholder="At least 10 characters"></textarea>
+        </div>
+        <button class="basic-button" type="submit">Submit</button>
+        <div class="form-status mt-3" role="status" aria-live="polite" hidden></div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

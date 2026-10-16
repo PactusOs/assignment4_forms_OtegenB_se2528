@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container site-nav" aria-label="Main navigation">
+      <a class="site-brand" href="index.html">Forms</a>
+      <div class="nav-links">
+        <a class="nav-item" href="index.html">Task 0</a>
+        <a class="nav-item" href="task1.html">Task 1</a>
+        <a class="nav-item" href="task2.html">Task 2</a>
+        <a class="nav-item" href="task3.html">Task 3</a>
+        <a class="nav-item active" href="task4.html" aria-current="page">Task 4</a>
+      </div>
+    </nav>
+  </header>
+  <main class="container page">
+    <h1>Registration Form</h1>
+    <section class="form-panel">
+      <form id="form4" novalidate>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label" for="firstName">First Name</label>
+            <input class="form-control" id="firstName" name="firstName" type="text" required minlength="2" maxlength="40" autocomplete="given-name" data-empty="First name is required.">
+            <div class="valid-feedback">Looks good</div>
+            <div class="invalid-feedback">First name is required.</div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="lastName">Last Name</label>
+            <input class="form-control" id="lastName" name="lastName" type="text" required minlength="2" maxlength="40" autocomplete="family-name" data-empty="Last name is required.">
+            <div class="valid-feedback">Good</div>
+            <div class="invalid-feedback">Last name is required.</div>
+          </div>
+          <div class="col-12">
+            <label class="form-label" for="email4">Email</label>
+            <input class="form-control" id="email4" name="email" type="email" required maxlength="100" autocomplete="email" placeholder="name@example.com" data-empty="Email is required.">
+            <div class="valid-feedback">Correct</div>
+            <div class="invalid-feedback">Email is required.</div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="password">Password</label>
+            <input class="form-control" id="password" name="password" type="password" required minlength="8" maxlength="64" autocomplete="new-password" data-empty="Password is required.">
+            <div class="form-text">Use at least 8 characters.</div>
+            <div class="valid-feedback">Nice</div>
+            <div class="invalid-feedback">Password is required.</div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="confirmPassword">Confirm Password</label>
+            <input class="form-control" id="confirmPassword" name="confirmPassword" type="password" required minlength="8" maxlength="64" autocomplete="new-password" data-empty="Please confirm your password.">
+            <div class="valid-feedback">Passwords match</div>
+            <div class="invalid-feedback">Please confirm your password.</div>
+          </div>
+          <fieldset class="col-md-6">
+            <legend class="form-label group-title">Gender</legend>
+            <div class="form-check">
+              <input class="form-check-input" id="male" name="gender" type="radio" value="male" required>
+              <label class="form-check-label" for="male">Male</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" id="female" name="gender" type="radio" value="female">
+              <label class="form-check-label" for="female">Female</label>
+            </div>
+            <div class="group-error" data-error="gender" hidden>Select a gender.</div>
+            <div class="group-success" data-success="gender" hidden>nice</div>
+          </fieldset>
+          <fieldset class="col-md-6">
+            <legend class="form-label group-title">Hobbies</legend>
+            <div class="form-check">
+              <input class="form-check-input" id="sports" name="hobby" type="checkbox" value="sports">
+              <label class="form-check-label" for="sports">Sports</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" id="music" name="hobby" type="checkbox" value="music">
+              <label class="form-check-label" for="music">Music</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" id="reading" name="hobby" type="checkbox" value="reading">
+              <label class="form-check-label" for="reading">Reading</label>
+            </div>
+            <div class="group-error" data-error="hobby" hidden>Choose at least one hobby.</div>
+            <div class="group-success" data-success="hobby" hidden>Looks good!</div>
+          </fieldset>
+          <div class="col-12">
+            <label class="form-label" for="country">Country</label>
+            <select class="form-select" id="country" name="country" required data-empty="Select a country.">
+              <option value="" selected disabled>Choose a country</option>
+              <option value="kazakhstan">Kazakhstan</option>
+              <option value="uzbekistan">Uzbekistan</option>
+              <option value="kyrgyzstan">Kyrgyzstan</option>
+              <option value="other">Other</option>
+            </select>
+            <div class="valid-feedback">Halo</div>
+            <div class="invalid-feedback">Select a country.</div>
+          </div>
+          <div class="col-12 d-flex gap-2 flex-wrap">
+            <button class="btn btn-primary" type="submit">Submit</button>
+            <button class="btn btn-outline-secondary" type="reset">Reset</button>
+          </div>
+        </div>
+        <div class="form-status mt-3" role="status" aria-live="polite" hidden></div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
